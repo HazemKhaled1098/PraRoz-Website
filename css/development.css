@@ -1,0 +1,242 @@
+:root {
+    --second-color: rgb(251, 107, 30)
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+html {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../imgs/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.main {
+    padding: 10px 70px; 
+}
+.main .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.main .top .logo .title {
+    color: var(--second-color);
+    font-size: 40px;
+}
+.main .top .menu ul li {
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
+    margin: 0 30px;
+}
+.main .top .menu ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.main .top .menu ul li a:hover {
+    color: var(--second-color);
+}
+.main .top .search {
+    width: 300px;
+    height: 40px;
+}
+.main .top .srch {
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--second-color);
+    border-right: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.main .top .search .btn {
+    float: right;
+    width: 100px;
+    height: 40px;
+    background-color: var(--second-color);
+    border: 1px solid var(--second-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.main .top .search a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #000;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.srch::placeholder {
+    color: white;
+}
+.main .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10% 40px;
+}
+.main .content .left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.main .content .left .id {
+    font-weight: bold;
+    font-size: 60px;
+    color: white;
+    width: 450px;
+}
+.main .content .left .id span {
+    color: var(--second-color);
+}
+.main .content .left .graph {
+    color: white;
+    font-size: 15px;
+    width: 600px;
+    line-height: 1.9;
+    padding-bottom: 25px;
+}
+.main .content .join {
+    background-color: var(--second-color);
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    padding-top: 7.5px;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.main .content .join a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    width: 150px;
+    height: 100%;
+    font-size: 20px;
+}
+.main .content .right {
+    padding: 20px;
+    width: 310px;
+    height: 450px;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.main .content .right .head {
+    text-align: center;
+    padding-top: 7.5px;
+    width: 300px;
+    background-color: white;
+    color: var(--second-color);
+    height: 40px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.main .content .right .data {
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 100px;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+}
+.main .content .right .data .mail {
+    width: 280px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--second-color);
+    color: white;
+}
+.main .content .right .data .mail::placeholder {
+    color: white;
+}
+.main .content .right .data .mail:focus {
+    outline: none;
+}
+.main .content .right .data .password {
+    width: 280px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--second-color);
+    color: white;
+}
+.main .content .right .data .password::placeholder {
+    color: white;
+}
+.main .content .right .data .password:focus {
+    outline: none;
+}
+.main .content .right .login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 280px;
+    height: 40px;
+    background-color: var(--second-color);
+    border-radius: 10px;
+}
+.main .content .right .login-btn .log {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+.main .content .right .sign {
+    align-items: center;
+    color: white;
+    font-size: 17.5px;
+    margin-top: 20px;
+    line-height: 2;
+}
+.main .content .right .sign span a {
+    margin-left: 50px;
+    color: var(--second-color);
+    text-decoration: none;
+    font-size: 17.5px;
+}
+.main .content .right .icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: white;
+    padding-top: 40px;
+    height: 50px;
+}
+.main .content .right .icon h4 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.main .content .right .icon .icons {
+    padding: 5px;
+}
+.main .content .right .icon .icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.2s;
+}
+.main .content .right .icon .icons a:hover {
+    color: var(--second-color);
+}
